@@ -1,80 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-  height: 100vw;
-  /* font-family: "Audiowide", cursive; */
+    height: 100vh;
+    width: 100vw;
+    font-family: "Audiowide", cursive;
 }
 
 .container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    /* margin: auto; */
+    /* overflow: hidden; */
 }
 
 #header {
-  background-color: black;
-  border-bottom: 5px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-bottom: 5px solid red;
+    height: 10vh;
 }
 
 #header a {
-  color: white;
-  text-decoration: none;
-}
-#header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    color: white;
+    text-decoration: none;
 }
 
 #header li {
-  display: inline;
-  padding: 0 15px;
-  font-family: "Audiowide", cursive;
-  text-transform: uppercase;
+    display: inline;
+    padding: 0 15px;
+    text-transform: uppercase;
 }
 
 #title {
-  color: white;
-  font-family: "Audiowide", cursive;
-  text-transform: capitalize;
+    color: white;
+    text-transform: capitalize;
 }
 #title span {
-  color: red;
+    color: red;
 }
 
 #main {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('images/banner.jpg');
-  background-size: cover;
-  text-align: center;
-  height: 90vh;
-  color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+        url("images/banner.jpg");
+    background-size: cover;
+    text-align: center;
+    height: calc(100vh - (10vh + 5px));
+    color: white;
 }
 
-#main h1{
+#main h1 {
     font-size: 50px;
     margin: 200px 0 25px;
-    font-family: "Audiowide", cursive;}
-
-#main p{
-    font-size: 30px;
-    font-family: "Audiowide", cursive;
 }
 
-#about, #contact{
+#main p {
+    font-size: 30px;
+    overflow:auto;
+    
+}
+
+#about,
+#contact {
     background-color: black;
     color: white;
-
-
 }
-#about h2, #contact h2 {
+#about h2,
+#contact h2 {
     font-size: 30px;
     text-align: center;
     color: red;
-    font-family: "Audiowide", cursive;
 }
 
-#about p, #contact p {
+#about p,
+#contact p {
     font-size: 30px;
     padding: 5px 10px;
-
 }
 #contact a {
     color: white;
